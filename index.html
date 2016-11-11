@@ -2,22 +2,32 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css"
+      href="https://necolas.github.io/normalize.css/latest/normalize.css">
     <link rel="stylesheet" type="text/css" href="https://bootswatch.com/united/bootstrap.css">
     <link rel="stylesheet" href="main.css">
     <title>Adagio - Music for Kids</title>
   </head>
   <body>
-    <header>
+    <header class="jumbotron">
       <div>
         <h3>Adagio - Music for Kids</h3><!--Change to name of business-->
       </div>
       <div>
-        <ul><!-- Sticky header -->
-          <li>About Us</li><!--Link to lower down this page-->
-          <li>Classes</li><!-- Link to other pages -->
-          <li>Prospective Families</li>
-          <li>Current Families</li>
-          <li>Contact Us</li><!--Drop down menu -->
+        <ul class="nav nav-pills"><!-- Sticky header -->
+          <li><a href="views/home.html">About Us</a></li><!--Link to lower down this page-->
+          <li><a href="views/classes.html">Classes</a></li><!-- Link to other pages -->
+          <li><a href="views/prospective.html">Prospective Families</a></li>
+          <li><a href="views/current.html">Current Families</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+              Contact us <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Call us</a></li>
+              <li><a href="#">Email us</a></li>
+            </ul>
+            </li><!--Drop down menu -->
         </ul>
       </div>
     </header>
