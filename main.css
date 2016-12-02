@@ -1,3 +1,8 @@
 body {
-  background-color: lightblue;
+  background-color: white;
+}
+
+#classphoto {
+  max-width: 650px;
+  height: auto;
 }
