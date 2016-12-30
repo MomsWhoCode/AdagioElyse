@@ -33,37 +33,53 @@
     </nav>
     </header>
   <main>
-      <div>
-        <img id="classphoto" class="img-fluid" src="../images/SKMherophoto.jpg">
-        <!--Picture of class-->
-      </div>
+    <div class="jumbotron">
+      <img class="img-responsive" src="../images/SKMherophoto.jpg">
+    </div>
       <div>
         <h3>Making Kids Musical!</h3><!--slogan-->
       </div>
-      <div>
-        <a href="#Why">Why Music?</a><!--Links ot other pages, or expanded on this page?-->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div onclick="hideShow()" class="well">
+              <a href="#Why">Why Music?</a><!--Links ot other pages, or expanded on this page?-->
+            </div>
+            <div id="whyMusic">
+              Music is great for kids!
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="well"
+              <a href="#What">What We Do</a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="well">
+              <a href="#Testimonials">Testimonials</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div>
-        <a href="#What">What We Do</a>
-      </div>
-      <div>
-        <a href="#Testimonials">Testimonials</a>
-      </div>
-      <div>
-        <img src=""><!---picture of Jessica goes here-->
-      </div>
-      <div id=Bio>
-        <h4>Biography</h4>
-        <p>
-          Jessica Clark is a classically trained clarinet player and music teacher.
-          She holds a Bachelor’s in Music Education from the University of Michigan and a
-          Masters in Clarinet Performance from New York University.
-          She has previously taught band, choir and jazz band in Washington State's Coupeville
-          Middle and High School. She is the proud mother of two daughters, Mariko and Yuna,
-          and out of a desire to spend as much time at home with her girls as possible founded
-          Stapleton Kids Music in 2016. Currently she performs with the Denver Philharmonic
-          Orchestra.
-        </p>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <img src=""><!---picture of Jessica goes here-->
+          </div>
+          <div id=Bio class="col-sm-9">
+            <h4>Biography</h4>
+            <p>
+              Jessica Clark is a classically trained clarinet player and music teacher.
+              She holds a Bachelor’s in Music Education from the University of Michigan and a
+              Masters in Clarinet Performance from New York University.
+              She has previously taught band, choir and jazz band in Washington State's Coupeville
+              Middle and High School. She is the proud mother of two daughters, Mariko and Yuna,
+              and out of a desire to spend as much time at home with her girls as possible founded
+              Stapleton Kids Music in 2016. Currently she performs with the Denver Philharmonic
+              Orchestra.
+            </p>
+          </div>
+        </div>
       </div>
     </main>
     <footer>
@@ -78,5 +94,15 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
+      <script>
+        function hideShow() {
+        var x = document.getElementById('whyMusic');
+        if (x.style.display === 'none') {
+            x.style.display = 'block';
+        } else {
+            x.style.display = 'none';
+        }
+    }
+    </script>
   </body>
 </html>
