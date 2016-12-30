@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Current Families at SKM</title><!--Change to business name-->
-  </head>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css"
+    href="https://necolas.github.io/normalize.css/latest/normalize.css">
+  <link rel="stylesheet" type="text/css" href="https://bootswatch.com/united/bootstrap.css">
+  <link rel="stylesheet" href="main.css">
+  <title>Adagio - Music for Kids</title>
+</head>
   <body>
     <header>
-      <!--Use portable sticky header with "CURRENT" in all caps-->
-      <h2>Welcome Back!</h2>
-    </header>
+    <nav class="navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Adagio</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="home.html">About Us</a></li><!--Link to lower down this page-->
+          <li><a href="classes.html">Classes</a></li><!-- Link to other pages -->
+          <li><a href="prospective.html">Prospective Families</a></li>
+          <li class="active"><a href="current.html">Current Families</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact Us
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Call Us</a></li>
+              <li><a href="#">Email Us</a></li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+      </nav>
+      </header>
     <main>
+      <h2>Welcome Back!</h2>
       <div>
         Announcements<!--instructions to get announcements; upgrade as
           updateable field from text message or facebook feed-->
@@ -35,6 +59,16 @@
       </div>
     </main>
     <footer>
+      <div>
+        Copyright, legal stuff
+      </div>
+      <div>
+        <a href=" https://www.facebook.com/StapletonKidsMusic/">Link to Facebook</a>
+      </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
   </body>
 </html>

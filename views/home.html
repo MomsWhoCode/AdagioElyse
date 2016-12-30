@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://bootswatch.com/united/bootstrap.css">
-    <link rel="stylesheet" href="../main.css">
-    <title>Adagio - Music for Kids</title>
-  </head>
-  <body>
-    <header>
-      <div>
-        <h3>Adagio - Music for Kids</h3><!--Change to name of business-->
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css"
+    href="https://necolas.github.io/normalize.css/latest/normalize.css">
+  <link rel="stylesheet" type="text/css" href="https://bootswatch.com/united/bootstrap.css">
+  <link rel="stylesheet" href="main.css">
+  <title>Adagio - Music for Kids</title>
+</head>
+<body>
+  <header>
+  <nav class="navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Adagio</a>
       </div>
-      <div>
-        <ul>
-          <li><a href="#Bio">About Us</a></li><!--Link to lower down this page-->
-          <li>Classes</li><!-- Link to other pages -->
-          <li>Prospective Families</li>
-          <li>Current Families</li>
-          <li>Contact Us</li><!--Drop down menu -->
-        </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#Bio">About Us</a></li><!--Link to lower down this page-->
+        <li><a href="classes.html">Classes</a></li><!-- Link to other pages -->
+        <li><a href="prospective.html">Prospective Families</a></li>
+        <li><a href="current.html">Current Families</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact Us
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Call Us</a></li>
+            <li><a href="#">Email Us</a></li>
+          </ul>
+        </li>
+      </ul>
       </div>
+    </nav>
     </header>
-    <main>
+  <main>
       <div>
         <img id="classphoto" class="img-fluid" src="../images/SKMherophoto.jpg">
         <!--Picture of class-->
@@ -63,5 +74,9 @@
         <a href=" https://www.facebook.com/StapletonKidsMusic/">Link to Facebook</a>
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
   </body>
 </html>
