@@ -7,7 +7,39 @@
   <link rel="stylesheet" type="text/css" href="https://bootswatch.com/united/bootstrap.css">
   <link rel="stylesheet" href="main.css">
   <title>Stapleton Kids Music</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+function whyFunction() {
+    var x = document.getElementById('whyMusic');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+  }
+  </script>
+  <script>
+  function whatFunction() {
+    var x = document.getElementById('whatWeDo');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+  }
+  </script>
+  <script>
+  function testimonialFunction() {
+    var x = document.getElementById('Testimonials');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+  }
+  </script>
 </head>
+
 <body>
   <header>
   <nav class="navbar-inverse navbar-fixed-top">
@@ -42,21 +74,42 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-4">
-            <div onclick="hideShow()" class="well">
-              <a href="#Why">Why Music?</a><!--Links ot other pages, or expanded on this page?-->
-            </div>
-            <div id="whyMusic">
-              Music is great for kids!
+            <button class="btn btn-info" onclick="whyFunction()">Why Music?</button>
+            <div class="well" id="whyMusic" style="display:none;">
+              <p>
+                olutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                cubilia Curae; Ut sit amet orci vel mauris blandit vehicula. Nullam quis enim.
+                Integer dignissim viverra velit. Curabitur in odio. In hac habitasse platea dictumst.
+                Ut consequat, tellus eu volutpat varius, justo orci elementum dolor, sed imperdiet
+                nulla tellus ut diam. Vestibulum ipsum ante, malesuada quis, tempus ac, placerat sit
+                amet, elit.
+              </p>
             </div>
           </div>
           <div class="col-sm-4">
-            <div class="well">
-              <a href="#What">What We Do</a>
+            <button class="btn btn-info" onclick="whatFunction()">What We Do</button>
+            <div class="well" id="whatWeDo" style="display:none;">
+              <p>
+                olutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                cubilia Curae; Ut sit amet orci vel mauris blandit vehicula. Nullam quis enim.
+                Integer dignissim viverra velit. Curabitur in odio. In hac habitasse platea dictumst.
+                Ut consequat, tellus eu volutpat varius, justo orci elementum dolor, sed imperdiet
+                nulla tellus ut diam. Vestibulum ipsum ante, malesuada quis, tempus ac, placerat sit
+                amet, elit.
+              </p>
             </div>
           </div>
           <div class="col-sm-4">
-            <div class="well" id="Testimonials">
-              <a href="#Testimonials">Testimonials</a>
+            <button class="btn btn-info" onclick="testimonialFunction()">Testimonials</button>
+            <div class="well" id="Testimonials" style="display:none;">
+              <p>
+                olutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                cubilia Curae; Ut sit amet orci vel mauris blandit vehicula. Nullam quis enim.
+                Integer dignissim viverra velit. Curabitur in odio. In hac habitasse platea dictumst.
+                Ut consequat, tellus eu volutpat varius, justo orci elementum dolor, sed imperdiet
+                nulla tellus ut diam. Vestibulum ipsum ante, malesuada quis, tempus ac, placerat sit
+                amet, elit.
+              </p>
             </div>
           </div>
         </div>
@@ -64,7 +117,8 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-3">
-            <img src=""><!---picture of Jessica goes here-->
+            <img class="img-responsive" src="../images/stockclarinet.jpg"
+            alt="Headshot of Jessica" style="width:auto;height:200px"><!---picture of Jessica goes here-->
           </div>
           <div id=Bio class="col-sm-9">
             <h4>Biography</h4>
@@ -90,19 +144,5 @@
         <a href=" https://www.facebook.com/StapletonKidsMusic/">Link to Facebook</a>
       </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous"></script>
-      <script>
-        function hideShow() {
-        var x = document.getElementById('whyMusic');
-        if (x.style.display === 'none') {
-            x.style.display = 'block';
-        } else {
-            x.style.display = 'none';
-        }
-    }
-    </script>
   </body>
 </html>
