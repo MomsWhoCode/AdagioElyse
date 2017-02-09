@@ -1,18 +1,8 @@
-body {
-  background-color: white;
-}
-
-#classphoto {
-  max-width: 650px;
-  height: auto;
-}
-
 div.well {
-    background-color: #e5eecc;
-    padding: 7px;
+    padding: 20px;
     border: solid 1px #c3c3c3;
 }
 
-#gcalendar {
-   margin-left: 100px
-}
+div.ex1 {
+    margin-top: 60px;
+  }
