@@ -1,61 +1,79 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css"
-    href="https://necolas.github.io/normalize.css/latest/normalize.css">
-  <link rel="stylesheet" type="text/css" href="https://bootswatch.com/united/bootstrap.css">
-  <link rel="stylesheet" href="main.css">
-  <title>Adagio - Music for Kids</title>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/united/bootstrap.css">
+    <link rel="stylesheet" href="../main.css">
+    <title>Stapleton Kids Music</title>
+  </head>
   <body>
     <header>
-    <nav class="navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Adagio</a>
-        </div>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="home.html">About Us</a></li><!--Link to lower down this page-->
-          <li><a href="classes.html">Classes</a></li><!-- Link to other pages -->
-          <li><a href="prospective.html">Prospective Families</a></li>
-          <li class="active"><a href="current.html">Current Families</a></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact Us
-            <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Call Us</a></li>
-              <li><a href="#">Email Us</a></li>
-            </ul>
-          </li>
-        </ul>
+      <nav class="navbar-inverse navbar-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="home.html">Stapleton Kids Music</a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="home.html">About Us</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="tuition.html">Tuition</a></li>
+            <li class="active"><a href="current.html">Current Families</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact Us
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Call Us</a></li>
+                <li><a href="#">Email Us</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </nav>
-      </header>
+    </header>
     <main>
-      <h2>Welcome Back!</h2>
-      <div>
-        Announcements<!--instructions to get announcements; upgrade as
-          updateable field from text message or facebook feed-->
+      <div class="container">
+        <h2>Welcome Back!</h2>
       </div>
-      <div>
-        Calendar <!--embed Google calendar-->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+              <div class="well">
+                Announcements<!--instructions to get announcements; upgrade as
+                  updateable field from text message or facebook feed-->
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="well">
+                Calendar <!--embed Google calendar-->
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="well">
+                Payments <!--initially include payment info, upgrade later to online system-->
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="well">
+                Last Time in Class <!--Updates about "homework" and activities in class-->
+              </div>
+            </div>
+          </div>
       </div>
-      <div>
-        Payments <!--initially include payment info, upgrade later to online system-->
-      </div>
-      <div>
-        Last Time in Class <!--Updates about "homework" and activities in class-->
-      </div>
-      <div>
-        Join our Community on
-        <a href="https://www.facebook.com/StapletonKidsMusic/">Facebook</a>
-      </div>
-      <div>
-        Running Late?<!--send text/email to Jessica-->
-      </div>
-      <div>
-        Feedback <!--Google form allowing parents to leave feedback, give testimonials-->
+      <div class="container">
+        <div class="row">
+          <div class="sm col-md-6">
+            <div class="well">
+              Running Late?<!--send text/email to Jessica-->
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="well">
+              Leave Feedback <!--Google form allowing parents to leave feedback, give testimonials-->
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <footer>
